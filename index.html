@@ -3,37 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compliment Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Higher or Lower Game</title>
 </head>
 <body>
-    <h1>Need a compliment?</h1>
-    <h3>If you want a new complement, just press the "New Complement" button</h3>
-    <div style="width: 500px; border-style: solid;">
-        <div style="width: 495px; height: 20px; border-style: solid;"><label id="Container"></label></div>
-        <button style="width: 500px;" onclick="displayRandomComplement()">New Complement</button>
-    </div>
-    <button onclick="redirectToGitHub()"><ion-icon name="logo-github"></ion-icon> syntaxMORG0</button>
+    <br><br><br>
+    <div class="container">
+        <h1>Higher or Lower?</h1>
+        <h2 id="result"></h2>
+        <p>Score: <span id="score">0</span></p>
+        <button class="button-1" style="height: 100px; width: 150px; font-size: 40px;" id="higher" onclick="checkGuess('higher')" disabled>⬆️</button>
+        <button class="button-2" style="height: 100px; width: 150px; font-size: 40px;" id="lower" onclick="checkGuess('lower')" disabled>⬇️</button><br><br>
+        <button class="button-3" style="height: 50px; width: 300px;" id="newGame" onclick="startNewGame()">New Game</button>
+    </div>   
+    <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script>
-        const sentences = [
-            "Ur ugly",
-            "U will never make it out alive",
-            "Ur mother so big that she took up 50tb on my drive",
-            "I have 365 days in a year but ur missing 2 Mother and fathers day!",
-            "U look like a witch!",
-            "What are you gonna do now?"
-        ];
-
-        function displayRandomComplement() {
-            const randomIndex = Math.floor(Math.random() * sentences.length);
-            const randomComplement = sentences[randomIndex];
-            document.getElementById('Container').textContent = randomComplement;
-        }
-
-        function redirectToGitHub() {
-            window.location.href = "https://github.com/syntaxMORG0";
-        }
-    </script>
 </body>
 </html>

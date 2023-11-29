@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Trebuchet MS';
+}
+
+.container {
+    height: 370px;
+    width: 330px;
+    border-color: white;
+    border-style: solid;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.button-1 {
+    background-color: black;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+}
+.button-1:hover {
+    border-color: blue;
+}
+
+.button-2 {
+    background-color: black;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+}
+.button-2:hover {
+    border-color: blue;
+}
+
+.button-3 {
+    background-color: black;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    border-radius: 10px;
+}
+.button-3:hover {
+    border-color: blue;
+    color: blue;
+}
